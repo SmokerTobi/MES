@@ -1,0 +1,14 @@
+direct addressing
+
+ORG 0000H
+MOV 30H,#05H
+MOV A,30H
+END
+
+indirect addressing
+
+ORG 0000H
+MOV 40H,#03H
+MOV R0,40H
+MOV A,@R0
+END
